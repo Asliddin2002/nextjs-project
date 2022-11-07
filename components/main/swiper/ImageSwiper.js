@@ -23,7 +23,7 @@ const ImageSwiper = ({ images }) => {
         modules={[Zoom, Pagination]}
         className="mySwiper"
       >
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <SwiperSlide className="slides" key={index}>
             <div className="swiper-zoom-container">
               <Image src={image} alt="image" className="swiper_image" />

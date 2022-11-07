@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const SideBar = ({ arr }) => {
   const router = useRouter();
   const route = router.pathname;
-  console.log(route);
+  // console.log(route);
   return (
     <div className="side_bar">
       <ul>

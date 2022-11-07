@@ -9,6 +9,7 @@ import icon3 from "../../components/assets/icon3.svg";
 import icon4 from "../../components/assets/icon4.svg";
 import Image from "next/image";
 import { FaCartPlus } from "react-icons/fa";
+import Discounts from "../../components/main/pagination/Discounts";
 
 let discount = [
   {
@@ -46,18 +47,12 @@ const Details = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = data.filter((item) => item.id == id);
-  const {
-    product_name,
-    product_price,
-    product_images,
-    product_characterstics,
-  } = product[0];
   return (
     <div className="details_wraper">
       <div className="addToCart">
         <FaCartPlus />
       </div>
-      <h5 className="checkout_header">{product_name}</h5>
+      <h5 className="checkout_header">{product[0]?.product_name}</h5>
       <div className="product_details_wraper">
         <div className="image_swiper">
           <div className="pic_icons">
@@ -71,12 +66,12 @@ const Details = () => {
             ))}
           </div>
 
-          <ImageSwiper images={product_images} />
+          <ImageSwiper images={product[0]?.product_images} />
         </div>
         <div className="details_data">
           <div className="details_price">
             <h5 className="label">Цена телефона</h5>
-            <h5 className="price">{product_price} сум </h5>
+            <h5 className="price">{product[0]?.product_price} сум </h5>
           </div>
           <div className="details_price">
             <h5 className="label">Общая цена (с наценкой)</h5>
@@ -90,24 +85,24 @@ const Details = () => {
             <div className="period_buttons">
               <button
                 onClick={() => setActiveClassNum(1)}
-                className={activeClassNum === 1 && "button_active"}
+                className={activeClassNum === 1 ? "button_active" : null}
               >
                 3 мес
               </button>
               <button
-                className={activeClassNum === 2 && "button_active"}
+                className={activeClassNum === 2 ? "button_active" : null}
                 onClick={() => setActiveClassNum(2)}
               >
                 6 мес
               </button>
               <button
-                className={activeClassNum === 3 && "button_active"}
+                className={activeClassNum === 3 ? "button_active" : null}
                 onClick={() => setActiveClassNum(3)}
               >
                 12 мес
               </button>
               <button
-                className={activeClassNum === 4 && "button_active"}
+                className={activeClassNum === 4 ? "button_active" : null}
                 onClick={() => setActiveClassNum(4)}
               >
                 24 мес
@@ -119,8 +114,8 @@ const Details = () => {
           </div>
           <div className="details_price">
             <h5 className="label">Общие характеристики</h5>
-            {product_characterstics.map((item) => (
-              <p key={item.id} className="characters">
+            {product[0]?.product_characterstics.map((item, index) => (
+              <p key={index} className="characters">
                 {item.name}: {item.name}
               </p>
             ))}
@@ -131,21 +126,7 @@ const Details = () => {
         </div>
       </div>
       <h5 className="discount">Акции</h5>
-      {discount.map((item) => (
-        <>
-          <div key={item.id} className="discount_list">
-            <div className={`discount_icon ${item.color}`}>
-              <Image src={item.icon} alt="icons" />
-            </div>
-            <div className="discount_info">
-              <span>{item.name}</span>
-              <span>{item.more}</span>
-            </div>
-            <input type="checkbox" />
-          </div>
-          <div className="hr"></div>
-        </>
-      ))}
+      <Discounts />
       <button className="add">Добавить в корзину</button>
     </div>
   );
