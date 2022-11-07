@@ -62,7 +62,10 @@ const Details = () => {
         <div className="image_swiper">
           <div className="pic_icons">
             {discount.map((item) => (
-              <div className={`discount_icon ${item.color} pic_icon `}>
+              <div
+                key={item.id}
+                className={`discount_icon ${item.color} pic_icon `}
+              >
                 <Image src={item.icon} alt="icons" />
               </div>
             ))}
