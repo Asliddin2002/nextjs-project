@@ -1,0 +1,81 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  font-size: 16px;
+  margin-left: 64px;
+}
+
+.header_profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+  width: 23%;
+}
+.header_profile .bell_icon {
+  color: #bbc2d0;
+  font-size: 23px;
+  cursor: pointer;
+  position: relative;
+}
+.notification_icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00c48c;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 50%;
+  top: -5px;
+  right: -2px;
+}
+.header_profile_item {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  background-color: #3d639d;
+  border-bottom-left-radius: 30px;
+  height: 100%;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+.header_profile_item :nth-child(2) {
+  font-size: 22px;
+  color: #3d639d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: #fff;
+  color: "#3d639d";
+}
+
+.active span {
+  color: #3d639d;
+}
+.active :nth-child(1) {
+  color: #3d639d;
+}
+.main_wraper {
+  background-color: #f3f5f8;
+  margin: 20px 0px 15px 20px;
+  border-radius: 4px;
+  width: 77%;
+  padding: 20px 28px;
+}

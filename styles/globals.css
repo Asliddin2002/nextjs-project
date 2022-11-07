@@ -14,6 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+.main_side_wraper {
+  display: flex;
+  
+}
 
 @media (prefers-color-scheme: dark) {
   html {

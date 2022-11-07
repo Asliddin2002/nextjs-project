@@ -1,0 +1,389 @@
+.page_path {
+  display: flex;
+}
+.page_path :nth-child(1) {
+  display: flex;
+  align-items: center;
+  color: #bbc2d0;
+  font-size: 12px;
+}
+.page_path :nth-child(2) {
+  color: #00c48c;
+  font-size: 12px;
+}
+
+/*  -----------------Checkout styles------------------- */
+
+.checkout_header {
+  margin-top: 20px;
+  color: #3d639d;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.total_product {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* search input  */
+.searc_input_wrapper {
+  position: relative;
+  display: flex;
+}
+.searc_input_wrapper .search_input {
+  width: 90%;
+  padding: 14px 20px;
+  color: #444;
+  border-top-left-radius: 26px;
+  border-bottom-left-radius: 26px;
+  outline: none;
+  border: none;
+}
+.searc_input_wrapper button {
+  width: 10%;
+  padding: 14px;
+  border-top-right-radius: 26px;
+  border-bottom-right-radius: 26px;
+  background-color: #00c48c;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+/* Cart component */
+
+.cart {
+  width: 18.5%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(138, 149, 158, 0.1);
+  padding: 12px;
+}
+.cart_image_wraper {
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_body :nth-child(1) {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.cart_body :nth-child(1):hover {
+  text-decoration: underline;
+}
+.cart_body :nth-child(2) {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+.discout_price_wraper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.discout_price_wraper .discout_price {
+  padding: 2px 6px;
+  color: #fff;
+  background-color: #ff647c;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  width: fit-content;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+.cart_body .discout_price_wraper span {
+  color: #bbc2d0;
+  font-size: 13px;
+}
+
+.cartList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* Pagination styles */
+
+.pagination_wraper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.pagination_wraper :nth-child(1) {
+  cursor: pointer;
+}
+.pagination_wraper :nth-child(3) {
+  cursor: pointer;
+}
+.pagination_wraper .pagination {
+  display: flex;
+  align-items: center;
+}
+.pagination_wraper .pagination .pagination_count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.pagination_wraper .pagination .active {
+  background-color: #00c48c;
+  color: #fff;
+}
+
+/* Product deatils */
+
+.details_wraper {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 15px 25px;
+}
+
+.details_wraper .product_details_wraper {
+  display: flex;
+  gap: 20px;
+}
+
+.product_details_wraper .image_swiper {
+  background-color: #f3f5f8;
+  border-radius: 15px;
+}
+.details_data {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+
+.details_data .details_price .label {
+  color: #bbc2d0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.details_data .details_price .price {
+  color: #262728;
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+.details_price {
+  width: 100%;
+}
+.details_data .details_price .discout_price_wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discout_price_wraper span {
+  color: #bbc2d0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discout_price_wraper span {
+  margin-top: auto;
+}
+.period_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.period_buttons button {
+  padding: 9px 35px;
+  width: 25%;
+  outline: none;
+  border: 1px solid #00c48c;
+  background-color: #fff;
+  color: #00c48c;
+  cursor: pointer;
+}
+.period_buttons .button_active {
+  background-color: #00c48c;
+  color: #fff;
+}
+
+.percentage {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.percentage span {
+  font-weight: 600;
+}
+
+.characters {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+.drop_down {
+  display: flex;
+  justify-content: space-between;
+  color: #00c48c;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.drop_down span {
+  font-size: 14px;
+}
+.discount_list {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.discount_list input {
+  margin-left: auto;
+  accent-color: #00c48c;
+  color: #fff;
+  width: 20px;
+}
+.discount_info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.discount_info :nth-child(2) {
+  color: #bbc2d0;
+  margin-top: 10px;
+}
+
+.discount {
+  color: #00c48c;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.discount_icon {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.hr {
+  font-weight: 100;
+  border-bottom: 1px solid #f3f5f8;
+}
+
+.add {
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  background-color: #00c48c;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+/* swiper */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+.image_swiper {
+  width: 45%;
+  height: 350px;
+}
+
+.addToCart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ff647c;
+  top: -20px;
+  right: 15px;
+}
+
+.pic_icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.pic_icon {
+  margin-bottom: 5px;
+}
+
+/* .mySwiper {
+  height: 100%;
+} */
+
+.image_swiper {
+  position: relative;
+}
+.mySwiper .slides .swiper_image {
+  height: 100%;
+  width: 200px;
+}
+.swiper-zoom-container {
+  height: 100%;
+}
+
+.crimson {
+  background-color: #f39dbd;
+}
+.blue {
+  background-color: #a2aedb;
+}
+.yellow {
+  background-color: #ffbd95;
+}
+
+.green {
+  background-color: #aad9ac;
+}

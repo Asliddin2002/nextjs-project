@@ -1,0 +1,34 @@
+.side_bar {
+  background-color: #3d639d;
+  width: 18%;
+  border-top-right-radius: 30px;
+  display: flex;
+  min-height: 90.4vh;
+  flex-direction: column;
+}
+
+.side_bar ul {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.side_bar ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 14px 40px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.side_bar ul li span {
+  font-size: 14px;
+}
+.side_bar ul li :nth-child(1) {
+  font-size: 22px;
+}
